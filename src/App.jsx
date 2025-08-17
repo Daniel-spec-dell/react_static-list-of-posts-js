@@ -20,8 +20,6 @@ export const posts = postsFromServer.map(post => ({
   comments: getPostbyId(post.id),
 }));
 
-console.log(posts);
-
 export const App = () => (
   <section className="App">
     <h1 className="App__title">Static list of posts</h1>
